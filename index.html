@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" data-lang="ko">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -437,8 +437,8 @@
 <div class="topbar">
   <div class="mark">All&nbsp;Exits</div>
   <div class="lang-toggle" role="group" aria-label="Language">
-    <button type="button" id="btn-ko" aria-pressed="true">KO</button>
-    <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    <button type="button" id="btn-ko" aria-pressed="false">KO</button>
+    <button type="button" id="btn-en" aria-pressed="true">EN</button>
   </div>
 </div>
 
@@ -500,50 +500,9 @@
     </div>
   </section>
 
-  <section id="guestbook">
-    <div class="kicker">
-      <span class="num">03</span>
-      <h2 lang-ko>방명록</h2>
-      <h2 lang-en>Guestbook</h2>
-    </div>
-    <p class="lede" style="font-size:15px;margin-bottom:22px;" lang-ko>짧은 인사나 감상평을 남겨주세요.</p>
-    <p class="lede" style="font-size:15px;margin-bottom:22px;" lang-en>Leave a short note or an impression.</p>
-
-    <form class="gb-form" id="gb-form" autocomplete="off">
-      <div>
-        <label for="gb-name" lang-ko>이름</label>
-        <label for="gb-name" lang-en>Name</label>
-        <input id="gb-name" name="name" type="text" maxlength="60" required>
-      </div>
-      <div class="gb-hp" aria-hidden="true">
-        <label for="gb-website">Website</label>
-        <input id="gb-website" name="website" type="text" tabindex="-1" autocomplete="off">
-      </div>
-      <div class="field-message">
-        <label for="gb-message" lang-ko>메시지</label>
-        <label for="gb-message" lang-en>Message</label>
-        <textarea id="gb-message" name="message" maxlength="500" required></textarea>
-      </div>
-      <div class="gb-actions">
-        <div class="gb-status" id="gb-status" role="status" aria-live="polite"></div>
-        <button class="gb-submit" type="submit" id="gb-submit">
-          <span lang-ko>남기기</span>
-          <span lang-en>Post</span>
-        </button>
-      </div>
-    </form>
-
-    <div class="gb-list" id="gb-list">
-      <div class="gb-loading">
-        <span lang-ko>불러오는 중…</span>
-        <span lang-en>Loading…</span>
-      </div>
-    </div>
-  </section>
-
   <section id="listen">
     <div class="kicker">
-      <span class="num">04</span>
+      <span class="num">03</span>
       <h2 lang-ko>감상하기</h2>
       <h2 lang-en>Listen</h2>
     </div>
@@ -580,7 +539,7 @@
 
   <section id="contact">
     <div class="kicker">
-      <span class="num">05</span>
+      <span class="num">04</span>
       <h2 lang-ko>연락하기</h2>
       <h2 lang-en>Contact</h2>
     </div>
@@ -588,6 +547,46 @@
       <a class="contact-email" href="mailto:platefossil@gmail.com">platefossil@gmail.com</a>
       <div class="contact-note" lang-ko>작업 문의, 협업 제안은 이메일로 보내주세요.</div>
       <div class="contact-note" lang-en>For inquiries and collaborations, reach out by email.</div>
+    </div>
+  </section>
+
+  <section id="guestbook">
+    <div class="kicker">
+      <h2 lang-ko>방명록</h2>
+      <h2 lang-en>Guestbook</h2>
+    </div>
+    <p class="lede" style="font-size:15px;margin-bottom:22px;" lang-ko>짧은 인사나 감상평을 남겨주세요.</p>
+    <p class="lede" style="font-size:15px;margin-bottom:22px;" lang-en>Leave a short note or an impression.</p>
+
+    <form class="gb-form" id="gb-form" autocomplete="off">
+      <div>
+        <label for="gb-name" lang-ko>이름</label>
+        <label for="gb-name" lang-en>Name</label>
+        <input id="gb-name" name="name" type="text" maxlength="60" required>
+      </div>
+      <div class="gb-hp" aria-hidden="true">
+        <label for="gb-website">Website</label>
+        <input id="gb-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="field-message">
+        <label for="gb-message" lang-ko>메시지</label>
+        <label for="gb-message" lang-en>Message</label>
+        <textarea id="gb-message" name="message" maxlength="500" required></textarea>
+      </div>
+      <div class="gb-actions">
+        <div class="gb-status" id="gb-status" role="status" aria-live="polite"></div>
+        <button class="gb-submit" type="submit" id="gb-submit">
+          <span lang-ko>남기기</span>
+          <span lang-en>Post</span>
+        </button>
+      </div>
+    </form>
+
+    <div class="gb-list" id="gb-list">
+      <div class="gb-loading">
+        <span lang-ko>불러오는 중…</span>
+        <span lang-en>Loading…</span>
+      </div>
     </div>
   </section>
 
